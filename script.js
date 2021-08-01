@@ -28,3 +28,7 @@ function createGrid() {
 
   document.getElementById("grid-parent").innerHTML = message;
 }
+
+function testParagraph() {
+  document.getElementById("test").innerHTML = "test completed";
+}
