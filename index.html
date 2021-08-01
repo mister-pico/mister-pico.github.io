@@ -612,22 +612,23 @@
 	<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 
 	<script>
-		var animation = anime({
+		anime({
+
 			targets: '.square, demo-wrapper',
-			loop: true,
 
-
-			rotate: 30,
+			rotateZ: [30],
 			scale: [{
-				value: .86
+				value: .866
 			}],
-
 
 			delay: anime.stagger(50, {
 				grid: [32, 18],
 				from: 'center',
+			}, {
+				direction: 'reverse'
 			}),
 
+			loop: true,
 			direction: 'alternate',
 
 			endDelay: 500,
