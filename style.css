@@ -33,5 +33,5 @@
   grid-auto-columns: auto;
   grid-auto-rows: auto;
   grid-template-columns: repeat(32, 1fr);
-  grid-gap: 4px
+  grid-gap: 10px
 }
