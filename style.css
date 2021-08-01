@@ -13,14 +13,14 @@
 }
 
 .square {
-  width: 10px;
-  height: 10px;
+  width: 40px;
+  height: 40px;
   position: relative;
-  background: red;
+  background: green;
 }
 
 .demo-wrapper {
-  width: 1208px;
+  width: 1280px;
   height: 720px;
   position: relative;
   background: black;
@@ -31,5 +31,5 @@
   display: grid;
   grid-auto-columns: auto;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(128, 1fr);
+  grid-template-columns: repeat(32, 1fr);
 }
