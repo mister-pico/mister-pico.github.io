@@ -612,22 +612,25 @@
 	<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 
 	<script>
-		anime({
-			targets: '.square',
+		var animation = anime({
+			targets: '.square, demo-wrapper',
 			loop: true,
+
+
+			rotate: 30,
 			scale: [{
-				value: .1,
-				easing: 'easeOutSine',
-				duration: 500
-			}, {
-				value: 1,
-				easing: 'easeInOutQuad',
-				duration: 1200
+				value: .86
 			}],
-			delay: anime.stagger(100, {
+
+
+			delay: anime.stagger(50, {
 				grid: [32, 18],
 				from: 'center',
-			})
+			}),
+
+			direction: 'alternate',
+
+			endDelay: 500,
 		});
 	</script>
 
