@@ -15,7 +15,7 @@ function squaresAnimation() {
       }),
 
     }, {
-      value: 0,
+      value: 60,
       delay: anime.stagger(50, {
         grid: [32, 18],
         from: 'center',
@@ -24,30 +24,21 @@ function squaresAnimation() {
       }),
 
     }, {
-      value: -30,
+      value: 90,
       delay: anime.stagger(50, {
         grid: [32, 18],
         from: 'center',
       }, {
         direction: 'reverse'
-      })
-
-    }, {
-      value: 0,
-      delay: anime.stagger(50, {
-        grid: [32, 18],
-        from: 'center',
-      }, {
-        direction: 'reverse'
-      })
+      }),
 
     }],
 
 
-
     loop: true,
-    duration: 20000,
-    endDelay: 3000
+    easing: 'linear',
+    //direction: 'alternate',
+    duration: 10000,
   }
   return anime(animationObject);
 }
