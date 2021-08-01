@@ -11,3 +11,25 @@
   position: absolute;
   background: white;
 }
+
+.square {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  background: red;
+}
+
+.demo-wrapper {
+  width: 1208px;
+  height: 720px;
+  position: relative;
+  background: black;
+}
+
+.grid {
+  width: 1280px;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(128, 1fr);
+}

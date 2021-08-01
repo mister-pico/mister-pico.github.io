@@ -1,18 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
+	<meta charset="utf-8">
+	<title></title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
 
-	<div id="container">
-		<div id="animate"></div>
+	<div class="demo-wrapper">
+		<div class="grid" id="grid-parent">
+
+
+
+		</div>
 	</div>
 
-	<script src="script.js" onload="myMove()"></script>
+
+	<script src="script.js" onload="createGrid()"></script>
+
+	<script src="Libraries/anime.min.js"></script>
+	<script>
+		anime({
+			targets: '.square',
+			loop: true,
+			scale: [{
+				value: .1,
+				easing: 'easeOutSine',
+				duration: 500
+			}, {
+				value: 1,
+				easing: 'easeInOutQuad',
+				duration: 1200
+			}],
+			delay: anime.stagger(100, {
+				grid: [128, 5],
+				from: 'center',
+			})
+		});
+	</script>
 
 </body>
 
