@@ -19,11 +19,11 @@ function myMove() {
 function createGrid() {
   let width = 1280 px;
   let height = 720 px;
-  let gridTile = "<div class='square'></div>"
+  let gridTile = "<div class='square'></div>";
   let message = "";
 
   for (var i = 0; i < width * height; i++) {
-    message = message + gridTile
+    message = message + gridTile;
   }
 
   document.getElementById("grid-parent").innerHTML = message;
