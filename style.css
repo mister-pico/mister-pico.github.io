@@ -16,14 +16,15 @@
   width: auto;
   height: auto;
   position: relative;
-  background: #f781a1;
+  background: #f794af;
+  border-radius: 8%;
 }
 
 .demo-wrapper {
   width: 1280px;
   height: 720px;
   position: relative;
-  background: #26d4d4;
+  background: #1aafc9;
 }
 
 .grid {
@@ -33,5 +34,5 @@
   grid-auto-columns: auto;
   grid-auto-rows: auto;
   grid-template-columns: repeat(32, 1fr);
-  grid-gap: 10px;
+  grid-gap: 12px;
 }
