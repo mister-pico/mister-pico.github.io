@@ -1,34 +1,53 @@
-function myMove() {
-  let id = null;
-  const elem = document.getElementById("animate");
-  let pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 10);
+function squaresAnimation() {
+  var animationObject = {
 
-  function frame() {
-    if (pos == 670) {
-      clearInterval(id);
-    } else {
-      pos++;
-      elem.style.top = pos + 'px';
-      elem.style.left = pos + 'px';
-    }
+    targets: '.square, demo-wrapper',
+
+
+
+    rotateZ: [{
+      value: 30,
+      delay: anime.stagger(50, {
+        grid: [32, 18],
+        from: 'center',
+      }, {
+        direction: 'reverse'
+      }),
+
+    }, {
+      value: 0,
+      delay: anime.stagger(50, {
+        grid: [32, 18],
+        from: 'center',
+      }, {
+        direction: 'reverse'
+      }),
+
+    }, {
+      value: -30,
+      delay: anime.stagger(50, {
+        grid: [32, 18],
+        from: 'center',
+      }, {
+        direction: 'reverse'
+      })
+
+    }, {
+      value: 0,
+      delay: anime.stagger(50, {
+        grid: [32, 18],
+        from: 'center',
+      }, {
+        direction: 'reverse'
+      })
+
+    }],
+
+
+
+    loop: true,
+    duration: 20000,
+    endDelay: 3000
   }
-}
-
-function createGrid() {
-  let width = 1280 px;
-  let height = 720 px;
-  let gridTile = "<div class='square'></div>";
-  let message = "";
-
-  for (var i = 0; i < (width * height); i++) {
-    message = message.concat(gridTile);
-  }
-
-  document.getElementById("grid-parent").innerHTML = message;
-}
-
-function testParagraph() {
-  document.getElementById("test").innerHTML = "test completed";
+  return anime(animationObject);
 }

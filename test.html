@@ -605,48 +605,11 @@
 		</div>
 
 
-		<script src="script.js" onload="createGrid()"></script>
-
-
 
 		<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-
-		<script>
-				anime({
-
-						targets: '.square, demo-wrapper',
+		<script src="script.js" onload="squaresAnimation()"></script>
 
 
-
-						rotateZ: [{
-								value: 30,
-								delay: anime.stagger(50, {
-										grid: [32, 18],
-										from: 'center',
-								}, {
-										direction: 'reverse'
-								}),
-
-						}, {
-								value: -30,
-								delay: anime.stagger(50, {
-										grid: [32, 18],
-										from: 'center',
-								}, {
-										direction: 'reverse'
-								})
-
-
-
-						}],
-
-
-
-						loop: true,
-						direction: 'alternate',
-						duration: 10000
-				});
-		</script>
 
 
 
