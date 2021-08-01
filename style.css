@@ -16,14 +16,14 @@
   width: auto;
   height: auto;
   position: relative;
-  background: blue;
+  background: #ed8751;
 }
 
 .demo-wrapper {
   width: 1280px;
   height: 720px;
   position: relative;
-  background: black;
+  background: #db3d6a;
 }
 
 .grid {
