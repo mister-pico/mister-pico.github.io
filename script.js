@@ -22,8 +22,8 @@ function createGrid() {
   let gridTile = "<div class='square'></div>";
   let message = "";
 
-  for (var i = 0; i < width * height; i++) {
-    message = message + gridTile;
+  for (var i = 0; i < (width * height); i++) {
+    message = message.concat(gridTile);
   }
 
   document.getElementById("grid-parent").innerHTML = message;
