@@ -6,39 +6,43 @@ function squaresAnimation() {
 
 
     rotateZ: [{
-      value: 30,
+      value: 180,
       delay: anime.stagger(50, {
         grid: [32, 18],
-        from: 'center',
-      }, {
-        direction: 'reverse'
       }),
 
     }, {
-      value: 60,
+      value: -270,
       delay: anime.stagger(50, {
         grid: [32, 18],
         from: 'center',
-      }, {
-        direction: 'reverse'
       }),
 
     }, {
-      value: 90,
+      value: 360,
       delay: anime.stagger(50, {
         grid: [32, 18],
         from: 'center',
-      }, {
-        direction: 'reverse'
+      }),
+      direction: 'reverse',
+
+    }, {
+      value: 0,
+      delay: anime.stagger(50, {
+        grid: [32, 18],
       }),
 
     }],
 
+    translateX: [{
+      value: 7
+    }],
 
+    direction: 'alternate',
     loop: true,
     easing: 'linear',
     //direction: 'alternate',
-    duration: 6000,
+    duration: 13000,
   }
   return anime(animationObject);
 }

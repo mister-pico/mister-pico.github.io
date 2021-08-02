@@ -17,14 +17,14 @@
   height: auto;
   position: relative;
   background: #f794af;
-  border-radius: 8%;
+  border-radius: 10%;
 }
 
 .demo-wrapper {
   width: 1280px;
   height: 720px;
   position: relative;
-  background: #1aafc9;
+  background-image: linear-gradient(20deg, #76f5ee, #3c99d6, #1aafc9);
 }
 
 .grid {
