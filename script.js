@@ -34,9 +34,6 @@ function squaresAnimation() {
 
     }],
 
-    translateX: [{
-      value: 7
-    }],
 
     direction: 'alternate',
     loop: true,
