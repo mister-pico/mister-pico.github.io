@@ -35,11 +35,16 @@ function squaresAnimation() {
     }],
 
 
-    direction: 'alternate',
-    loop: true,
+    //direction: 'alternate',
+    //loop: true,
     easing: 'linear',
     //direction: 'alternate',
-    duration: 13000,
+    duration: 3000,
   }
+
   return anime(animationObject);
+}
+
+function main() {
+  window.setInterval(squaresAnimation(), 3000);
 }
