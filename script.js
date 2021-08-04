@@ -1,6 +1,12 @@
 function main() {
+  var grid = "";
+  var columns = 64;
+  var rows = 32;
 
-  document.getElementById("test").innerHTML = "<div class=\"square\"></div>";
+  for (var i = 0; i < (columns * rows); i++) {
+    grid = grid + "<div class=\"square\">p</div>"
+  }
 
+  document.getElementById("test").innerHTML = grid;
 
 }

@@ -7,7 +7,6 @@ body {
   height: auto;
   position: relative;
   background: #f794af;
-  border-radius: 10%;
 }
 
 .testContainer {
@@ -23,6 +22,6 @@ body {
   display: grid;
   grid-auto-columns: auto;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(32, 1fr);
-  grid-gap: 12px;
+  grid-template-columns: repeat(64, 1fr);
+  grid-gap: 3px;
 }
