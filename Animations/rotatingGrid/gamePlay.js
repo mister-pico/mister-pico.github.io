@@ -5,45 +5,41 @@ function squaresAnimation() {
 
 
 
-    rotateZ: [{
-      value: 180,
-      delay: anime.stagger(50, {
-        grid: [32, 18],
-      }),
+    keyframes: [{
+        rotate: 360
+      },
+      {
+        rotate: 0
+      },
+      {
+        rotate: 540,
+        duration: 3500
+      },
+      {
+        rotate: -180
+      }
+    ],
 
-    }, {
-      value: -270,
-      delay: anime.stagger(50, {
-        grid: [32, 18],
-        from: 'center',
-      }),
-
-    }, {
-      value: 360,
-      delay: anime.stagger(50, {
-        grid: [32, 18],
-        from: 'center',
-      }),
-      direction: 'reverse',
-
-    }, {
-      value: 0,
-      delay: anime.stagger(50, {
-        grid: [32, 18],
-      }),
-
-    }],
-
-
-    direction: 'alternate',
     loop: true,
-    easing: 'linear',
-    direction: 'alternate',
-    duration: 3000,
+    easing: 'easeInOutSine',
+    //direction: 'alternate',
+    duration: 15000,
   }
 
   return anime(animationObject);
 };
+
+function rotate(axis, angle, delay, staggerDelay, columns, rows) {
+
+
+  var rotation = "rotate" + axis;
+
+
+  return {
+    rotation: angle
+  };
+}
+
 
 function main() {
   squaresAnimation();

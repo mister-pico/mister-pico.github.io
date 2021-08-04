@@ -21,7 +21,7 @@ function squaresAnimation() {
     duration: 3000,
   }
 
-  return anime(animationObject);
+  //return anime(animationObject);
 };
 
 function main() {
