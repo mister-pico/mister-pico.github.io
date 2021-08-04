@@ -1,15 +1,5 @@
-#container {
-  width: 1280px;
-  height: 720px;
-  position: relative;
-  background: black;
-}
-
-#animate {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  background: white;
+body {
+  background-image: linear-gradient(0deg, #3c99d6, #1aafc9, #3c99d6);
 }
 
 .square {

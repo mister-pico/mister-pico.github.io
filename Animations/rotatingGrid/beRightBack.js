@@ -1,45 +1,31 @@
 function squaresAnimation() {
+
   var animationObject = {
+
 
     targets: '.square, demo-wrapper',
 
+    //keyframes: []
 
-
-    rotateZ: [{
-      value: 180,
-      delay: anime.stagger(50, {
+    borderRadius: [{
+      value: '50%',
+      delay: anime.stagger(80, {
         grid: [32, 18],
-      }),
-
+        from: 'center'
+      })
     }, {
-      value: -270,
-      delay: anime.stagger(50, {
+      value: '2%',
+      delay: anime.stagger(0, {
         grid: [32, 18],
-        from: 'center',
-      }),
-
-    }, {
-      value: 360,
-      delay: anime.stagger(50, {
-        grid: [32, 18],
-        from: 'center',
-      }),
-      direction: 'reverse',
-
-    }, {
-      value: 0,
-      delay: anime.stagger(50, {
-        grid: [32, 18],
-      }),
-
+        from: 'center'
+      })
     }],
 
 
-    direction: 'alternate',
     loop: true,
-    easing: 'linear',
-    direction: 'alternate',
-    duration: 3000,
+    easing: 'easeInOutQuad',
+    //direction: 'alternate',
+    duration: 2000,
   }
 
   return anime(animationObject);

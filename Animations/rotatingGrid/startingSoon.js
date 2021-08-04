@@ -39,7 +39,7 @@ function squaresAnimation() {
     loop: true,
     easing: 'linear',
     direction: 'alternate',
-    duration: 3000,
+    duration: 15000,
   }
 
   return anime(animationObject);

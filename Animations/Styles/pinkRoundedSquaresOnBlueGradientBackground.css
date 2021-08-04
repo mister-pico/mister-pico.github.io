@@ -15,10 +15,11 @@
 .square {
   width: auto;
   height: auto;
+  align-content: center;
   position: relative;
-  background: #f794af;
+  background: #e29bae;
   border-radius: 10%;
-  border: 2px solid #f76a80;
+  border: 5px solid rgba(218, 93, 159, 0.88);
 }
 
 .demo-wrapper {
