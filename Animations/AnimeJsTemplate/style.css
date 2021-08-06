@@ -6,8 +6,8 @@ body {
   width: auto;
   height: auto;
   position: relative;
-  background: #f794af;
-  border: 2.25px solid #f6ff00;
+  background: #3eddae;
+  border: 2.25px solid rgba(87, 36, 213, 0.78);
   border-radius: 15%
 }
 
