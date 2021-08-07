@@ -3,7 +3,7 @@ function main() {
   var rows = 18;
   var elementClass = "square";
   var duration = 150000;
-  var delay = duration / 50;
+  var delay = 0;
   var autoplay = true
   var easing = ""
 
@@ -117,12 +117,12 @@ function squaresAnimation(duration, rows, columns, delay) {
     targets: '.square, demo-wrapper',
 
     rotate: [{
-      value: anime.stagger([90, 290], {
+      value: anime.stagger([90, 360], {
         direction: 'first'
       }),
       delay: delay
     }, {
-      value: anime.stagger([360, 500], {
+      value: anime.stagger([450, 600], {
         direction: 'last'
       }),
       delay: delay
@@ -134,13 +134,25 @@ function squaresAnimation(duration, rows, columns, delay) {
 
 
     scale: [{
-      value: anime.stagger([1.75, 2]),
+      value: 1.1,
       delay: delay
     }, {
-      value: anime.stagger([1.4, 1.6]),
+      value: 1.5,
       delay: delay
     }, {
       value: 1,
+      delay: delay
+    }],
+
+
+    borderRadius: [{
+      value: 25,
+      delay: delay
+    }, {
+      value: 10,
+      delay: delay
+    }, {
+      value: 15,
       delay: delay
     }],
 
