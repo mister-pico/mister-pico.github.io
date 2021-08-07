@@ -2,11 +2,11 @@ function main() {
   var columns = 32;
   var rows = 18;
   var elementClass = "square";
-  var duration = 35000;
+  var duration = 60000;
   var delay = duration / 50;
 
   createGrid(rows, columns, elementClass);
-  squaresAnimation(duration, rows, columns);
+  anime(squaresAnimation(duration, rows, columns, delay));
 }
 
 
@@ -14,9 +14,18 @@ function main() {
 function createGrid(rows, columns, elementClass) {
 
   var grid = "";
+  var row = 1;
 
   for (var i = 0; i < (columns * rows); i++) {
-    grid = grid + "<div class=\"" + elementClass + "\"></div>"
+
+    var column = Math.ceil((i + 1) % columns);
+    var gridElementAddress = "(" + column + "," + row + ")";
+
+
+    grid = grid + "<div class=\"" + elementClass + "\"><div id=\"" + gridElementAddress + "\"></div></div>"
+
+
+
   }
 
   document.getElementById("animationElements").innerHTML = grid;
@@ -42,9 +51,11 @@ function squaresAnimation(duration, rows, columns, delay) {
 
     loop: true,
     //easing: 'linear',
+    //it seems like the alternate feature does not carry the easin over.
     //direction: 'alternate',
     duration: duration,
   }
 
-  return anime(animationObject);
+  //return anime(animationObject);
+  return animationObject;
 }

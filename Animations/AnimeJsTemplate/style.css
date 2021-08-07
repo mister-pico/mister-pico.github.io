@@ -1,14 +1,9 @@
-body {
-  background-image: linear-gradient(0deg, #3c99d6, #1aafc9, #3c99d6);
-}
-
 .square {
   width: auto;
   height: auto;
   position: relative;
-  background: #3eddae;
-  border: 2.25px solid #5724d5;
-  border-radius: 15%
+  border: 2.2px solid #5724d5;
+  border-radius: 15%;
 }
 
 .testContainer {
@@ -18,6 +13,7 @@ body {
   background-image: linear-gradient(20deg, #76f5ee, #3c99d6, #1aafc9);
 }
 
+/*consider renaming this class. it's a grid, but it's name should be more descriptive. the fact that it's a grid is encoded in the grid attributes defined within the class itself*/
 .grid {
   width: 1280px;
   height: 720px;
@@ -25,5 +21,5 @@ body {
   grid-auto-columns: auto;
   grid-auto-rows: auto;
   grid-template-columns: repeat(32, 1fr);
-  grid-gap: 12px;
+  grid-gap: 1px;
 }
