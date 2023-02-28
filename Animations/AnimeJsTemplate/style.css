@@ -13,13 +13,8 @@
   background-image: linear-gradient(20deg, #76f5ee, #3c99d6, #1aafc9);
 }
 
-/*consider renaming this class. it's a grid, but it's name should be more descriptive. the fact that it's a grid is encoded in the grid attributes defined within the class itself*/
-.grid {
-  width: 1280px;
-  height: 720px;
-  display: grid;
-  grid-auto-columns: auto;
-  grid-auto-rows: auto;
-  grid-template-columns: repeat(32, 1fr);
-  grid-gap: 3px;
+.contact_info {}
+
+.box {
+  display: flex;
 }
